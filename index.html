@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamed Elbagir — Portfolio</title>
+<style>
+  :root {
+    --ink: #e8e6e1;
+    --paper: #17181a;
+    --line: #3a3b3e;
+    --teal: #4fb3a6;
+    --gold: #d4ab55;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+  }
+
+  header {
+    padding: 60px 24px 40px;
+    text-align: center;
+    border-bottom: 3px solid var(--teal);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.6rem;
+    letter-spacing: 1px;
+  }
+
+  header p.role {
+    margin: 8px 0 0;
+    font-size: 1.1rem;
+    color: var(--teal);
+    font-style: italic;
+  }
+
+  nav {
+    text-align: center;
+    background: #0d0e10;
+    padding: 12px;
+  }
+
+  nav a {
+    color: var(--ink);
+    text-decoration: none;
+    margin: 0 14px;
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  nav a:hover, nav a:focus {
+    color: var(--gold);
+  }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  section {
+    margin-bottom: 48px;
+  }
+
+  h2 {
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--teal);
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+
+  .entry {
+    margin-bottom: 22px;
+  }
+
+  .entry-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4px;
+    font-weight: bold;
+  }
+
+  .entry-header span.date {
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    color: #9a9b9e;
+    font-weight: normal;
+  }
+
+  .entry p {
+    margin: 6px 0 0;
+  }
+
+  ul.skills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  h3.skill-group {
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #6b6b6b;
+    margin: 18px 0 8px;
+  }
+
+  ul.skills li {
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    background: #232427;
+    border: 1px solid var(--line);
+    padding: 6px 14px;
+    border-radius: 3px;
+  }
+
+  #contact {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+  }
+
+  #contact a {
+    color: var(--teal);
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  #contact a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    color: #6b6c6f;
+    padding: 20px;
+  }
+
+  @media (max-width: 480px) {
+    header h1 { font-size: 2rem; }
+    nav a { display: inline-block; margin: 4px 8px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Mohamed Elbagir</h1>
+  <p class="role">Mechatronics Engineer</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      I design and build systems where mechanical, electrical, and software components are interconnected — sensors, 
+      actuators, and the code that controls them. I'm particularly interested in robotics, automation, and embedded systems, 
+      and I've worked with tools including AutoCAD, Onshape, MATLAB, Siemens TIA Portal, and Arduino IDE. 
+      I have a strong foundation in programming and electronics, and I enjoy solving complex, hands-on problems.
+
+    </p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span>Trainee, Smart Methods</span>
+        <span class="date">Jun 2026 — Aug 2026</span>
+      </div>
+      <p>Gained experience in the fields of Mechanical Engineering, Electrical &amp; Electronics &amp; IoT, 
+        Robotics &amp; AI and Web development &amp; NLP.
+      </p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span>B.Sc. in Mechatronics Engineering, Cyprus International University</span>
+        <span class="date">2024 — 2027</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+
+    <h3 class="skill-group">Engineering Software</h3>
+    <ul class="skills">
+      <li>AutoCAD</li>
+      <li>Onshape</li>
+      <li>MATLAB/Simulink</li>
+      <li>Siemens TIA Portal</li>
+      <li>Arduino IDE</li>
+    </ul>
+
+    <h3 class="skill-group">Programming</h3>
+    <ul class="skills">
+      <li>C/C++</li>
+      <li>Python</li>
+    </ul>
+
+    <h3 class="skill-group">Control &amp; Automation</h3>
+    <ul class="skills">
+      <li>PID Control</li>
+      <li>PLC Programming</li>
+      <li>Robotics Fundamentals</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span>IoT-Based PID Tuning</span>
+      </div>
+      <p>A self-balancing rod that uses an IMU sensor to continuously monitor its orientation and adjust the control input to 
+        maintain balance. PID parameters can be tuned remotely via a mobile app, allowing convenient, real-time adjustments. 
+        The project's goal was to enable PID tuning for systems that are physically difficult or unsafe to access.</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span>Smart Firefighting Truck</span>
+      </div>
+      <p>Equipped with a flame sensor, the truck autonomously detects fires, navigates to the source, 
+        and extinguishes them using an onboard water pump.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      <a href="mailto:mohamedelbagir11@gmail.com">mohamedelbagir11@gmail.com</a> |
+      <a href="tel:+966510638032">+966 51 063 8032</a> |
+      <a href="https://github.com/M-Elbagir" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2026 Mohamed Elbagir.
+</footer>
+
+</body>
+</html>
